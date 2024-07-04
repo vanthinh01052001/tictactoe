@@ -1,0 +1,51 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;;
+}
+.game-board {
+  margin: 25px;
+  width: 500px;
+  height: 500px;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.game-cell {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  font-weight: bold;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.game-cell.is-X {
+  color: #2cccff;
+}
+.game-cell.is-O {
+  color: #FF6651;
+}
+.game-reset {
+  margin: 25px;
+  display: inline-block;
+  padding: 15px 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: #6A5AF9;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+.game-winner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  font-size: 100px;
+  font-weight: 600;
+  color: #F62682;
+}
